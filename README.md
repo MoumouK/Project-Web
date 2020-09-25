@@ -10,3 +10,5 @@ On auras tous des pages bien précise a faire mais avec un theme global ( Header
 Kemyan s'occuperais de la page des valeurs , Nicola lui de l'équipe et Justin des partenaires.
 
 Salut - Justin
+
+Salut - Nico
