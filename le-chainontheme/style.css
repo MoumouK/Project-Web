@@ -1,0 +1,255 @@
+/*Titres*/
+@import url(https://fonts.googleapis.com/css?family=Sahitya");
+
+/*Description*/
+@import url(https://fonts.googleapis.com/css?family=Signika");
+
+body{
+  padding: 0px;
+  margin: 0px;
+  overflow-x:hidden;
+}
+
+.header{
+  font-family:"Sahitya";
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  width:100%;
+  height:100px;
+  display: flex;
+  align-items: center;
+  border : black solid;
+  border-width: 0px 0px 5px 0px;
+}
+
+.Bouton.Don{
+  display: flex;
+  text-align:center;
+  align-items:center;
+  padding: 10px;
+  cursor: pointer;
+  background-color:#077DBE;
+  color:black;
+  text-decoration: none;
+  position:absolute;
+  left:85%;
+  transition: 0.5s;
+}
+
+.Bouton.Don:hover{
+  color: white ;
+  background-color:#3c96c9;
+}
+
+.Bouton.Langue{
+  display: flex;
+  align-items:center;
+  padding: 5px;
+  cursor: pointer;
+  background-color:#077DBE;
+  color: black;
+  text-decoration: none;
+  position:absolute;
+  right:90%;
+  transition: 0.5s;
+}
+
+.Bouton.Langue:hover{
+  color: white ;
+  background-color:#3c96c9;
+}
+
+
+/* Barre de Nav */
+.BarreNav{
+  width:30%;
+  text-align:center;
+  align-items:center;
+  font-size:15px;
+  position:absolute;
+  left:55%;
+}
+
+ul {
+  margin:10px;
+  padding:0;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+il {transition: 0.5s;}
+
+.dropdown{
+  border: none;
+  font-size:15px;
+  font-family:"Sahitya";
+  font-weight: bold;
+  color: #077DBE; 
+  /*border : 1px red solid;*/
+  background-color: transparent;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background-color:#077DBE;
+  min-width: 60px;
+  color: white;
+  padding:5px;
+  font-size:15px;
+  transition: 0.3s;
+  /*border : 1px red solid;*/
+}
+
+.apparitionMenu:hover{
+  color: black;
+}
+
+.dropdown-content:hover{
+  color: black;
+}
+
+.apparitionMenu:hover .dropdown-content{
+  display:block;
+} 
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: #E615BC;
+}
+
+.LogoHeader {
+  position:absolute;
+  width:200px;
+  right:60%;
+}
+
+.footer{
+  width:100%;
+  background-color:#077DBE;
+  padding:10px;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.logoFooter{
+  width:300px;
+}
+
+.Container{
+  width: 100%;
+  display:flex;
+  justify-content:space-around;
+}
+  
+.titreFooter{
+  font-size:20px;
+  font-family:"Sahitya";
+  font-weight: bold;
+  color:white;
+}
+
+.descriptionFooter{
+  font-size:15px;
+  font-family:"Sahitya";
+  font-weight: bold;
+  color:white;
+}
+
+.SousContainer {
+}
+
+.Bouton.DonFooter{
+  display: flex;
+  font-family:"Sahitya";
+  text-align:center;
+  align-items:center;
+  padding: 10px;
+  cursor: pointer;
+  background-color:white;
+  color:#077DBE;
+  text-decoration: none;
+}
+
+.copyright{
+  font-family:"Sahitya";
+  color:white;
+  font-size:10px;
+}
+
+.burger{
+  width:40px;
+  height:40px;
+  background-color:black;
+  position:absolute;
+  left:90%;
+  cursor: pointer;
+  display:none;
+}
+
+.reseauSociaux img{
+  width:70px;
+}
+
+.Content{
+  width:100%;
+  height:1000px;
+}
+
+.deuxieme.menu{
+  display: flex;
+  flex-direction: column;
+  font-family:"Sahitya";
+  font-size:16px;
+  color:white;
+  display:none;
+}
+
+.deuxieme.menuUN{
+  display: flex;
+  background-color:#077DBE;
+  padding:6px;
+  cursor: pointer;
+  justify-content:center;
+}
+
+.deuxieme.menuDEUX{
+  display: flex;
+  background-color:#088dd7;
+  padding:6px;
+  cursor: pointer;
+  justify-content:center;
+}
+
+.reseauSociaux img{
+  width:50px;
+}
+
+@media screen and (max-width: 900px) {
+  .burger{display: block;}
+  .apparitionMenu{display:none;}
+  .BarreNav{display:none;}
+  .Bouton.Don{left:50%;font-size:13px;}
+  .LogoHeader{width:140px;}
+  .Bouton.Langue{right:90%;font-size:10px;display:none;}
+  .Bouton.Don{left:60%; font-size:12px;}
+  .titreFooter{font-size:15px;}
+  .descriptionFooter{font-size:13px;}
+  .Container{flex-direction:row;align-items:center;}
+  .reseauSociaux img{width:40px;}
+  .Bouton.DonFooter{font-size:13px;}
+}
+
+@media screen and (max-width: 375px) {
+  .Bouton.Don{left:45%; font-size:10px;}
+  .logoHeader{ width:100px;} 
+  .reseauSociaux img{width:30px;}
+  .Bouton.DonFooter{font-size:10px;}
+}
+-------------------------
